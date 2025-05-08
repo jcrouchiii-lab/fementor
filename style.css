@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: hsl(100, 0%, 100%);
+    background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
+    background-size: cover;
     color: hsl(0, 6%, 24%);
     display: flex;
     justify-content: center;
@@ -19,6 +20,9 @@ body {
     max-width: 1440px;
     width: 100%;
     padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
