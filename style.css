@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(100, 0%, 100%);
     color: hsl(0, 6%, 24%);
     display: flex;
     justify-content: center;
