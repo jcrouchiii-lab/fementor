@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('email-form');
     const emailInput = document.getElementById('email');
     const errorMessage = document.querySelector('.error-message');
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
         const email = emailInput.value.trim();
 
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             errorMessage.style.display = 'block';
         } else {
             errorMessage.style.display = 'none';
-            // Handle successful submission (e.g., send to server)
             console.log('Email submitted:', email);
             form.reset();
         }
