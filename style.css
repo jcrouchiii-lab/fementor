@@ -20,7 +20,7 @@ body {
 .container {
     display: flex;
     max-width: 1440px;
-    width: 100%;
+    width: 75%;
     margin: 2rem;
     background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
     border-radius: 10px;
