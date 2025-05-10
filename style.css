@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
+    /* background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed; */
     background-size: cover;
     color: hsl(0, 6%, 24%);
     display: flex;
