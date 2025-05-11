@@ -75,6 +75,10 @@ form {
     flex-direction: column;
 }
 
+.email-form {
+	color: aqua;
+}
+
 .img {
 	max-width: 50px;
 }
@@ -90,6 +94,10 @@ input {
     font-size: 1rem;
 	color: #e4c7c9;
     outline: none;
+}
+
+::placeholder {
+	color: #e4c7c9;
 }
 
 button {
