@@ -19,9 +19,11 @@ body {
 /* Container Layout */
 .container {
     display: flex;
-    max-width: 1440px;
-    width: 75%;
-    margin: 2rem;
+    max-width: 823px;
+	max-height: 523px;
+    width: 100%;
+    margin: 5rem;
+	margin-left:11rem;
     background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -38,52 +40,67 @@ body {
 }
 
 .logo {
-    margin-bottom: 2rem;
+    margin: 2rem;
+	margin-left:5rem
 }
 
 h1 {
     font-size: 3rem;
+	color:#e4c7c9;
     margin-bottom: 1rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
     line-height: 1.2;
+	letter-spacing: 0.2rem;
 }
 
 h1 span {
-    color: hsl(0, 93%, 68%);
+    color:black;
 }
 
 p {
     margin-bottom: 2rem;
-    color: hsl(0, 36%, 70%);
+	margin-left: 5rem;
+	margin-right: 5rem;
+	font-size: 0.8rem;
+    color: #e4c7c9;
     line-height: 1.6;
 }
 
 /* Form Styling */
 form {
     display: flex;
+	margin-left: 5rem;
+	max-width: 300px;
     flex-direction: column;
 }
 
-.form-group {
-    display: flex;
-    align-items: center;
-    position: relative;
+.img {
+	max-width: 50px;
 }
 
 input {
     flex: 1;
-    padding: 1rem;
+    padding: 0.8rem;
+	max-width: 230px;
+	margin-top: 1rem;
+	margin-left: 0rem;
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 50px;
     font-size: 1rem;
+	color: #e4c7c9;
     outline: none;
 }
 
 button {
-    background-color: hsl(0, 93%, 68%);
+    background-color: #f39998;
     border: none;
-    border-radius: 50px;
-    padding: 1rem 2rem;
-    margin-left: -3rem;
+	width: 4rem;
+	height: 3rem;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+    margin-left: 12rem;
+	margin-top: -2.9rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -98,21 +115,22 @@ button:hover {
 .error-message {
     color: hsl(0, 93%, 68%);
     margin-top: 0.5rem;
-    display: none;
+	margin-left: 0rem;
+	display: none;
 }
 
 /* Image Box */
-.image-box {
-    flex: 1;
+.image-container {
+	flex: 1;
     position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: hsl(0, 0%, 98%);
 }
-
 .hero-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: cover;
 }
