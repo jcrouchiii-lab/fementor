@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    /* background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed; */
+    background-size: cover;
+    color: hsl(0, 6%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    max-width: 823px;
+    width: 100%;
+    background: url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Content Box */
+.content-box {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    margin: 2rem;
+	margin-left:5rem
+}
+
+h1 {
+    font-size: 3rem;
+	color:#e4c7c9;
+    margin-bottom: 1rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+    line-height: 1.2;
+	letter-spacing: 0.2rem;
+}
+
+h1 span {
+    color:black;
+}
+
+p {
+    margin-bottom: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	font-size: 0.8rem;
+    color: #e4c7c9;
+    line-height: 1.6;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+	margin-left: 5rem;
+	max-width: 300px;
+    flex-direction: column;
+}
+
+.email-form {
+	color: aqua;
+}
+
+.img {
+	max-width: 50px;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+	max-width: 230px;
+	margin-top: 0rem;
+	margin-left: 0rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    font-size: 1rem;
+	color: #e4c7c9;
+    outline: none;
+}
+
+::placeholder {
+	color: #e4c7c9;
+}
+
+button {
+    background-color: #f39998;
+    border: none;
+	width: 4rem;
+	height: 3rem;
+    border-radius: 25px;
+    padding: 1rem 1rem;
+    margin-left: 12rem;
+	margin-top: -2.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(0, 80%, 60%);
+}
+
+.error-message {
+    color: hsl(0, 93%, 68%);
+    margin-top: 0.5rem;
+	margin-left: 0rem;
+	display: none;
+}
+
+/* Image Box */
+.image-container {
+	flex: 1;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+}
+.hero-image {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content-box {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .image-box {
+        order: -1;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
